@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Truyện Hay Công Chúa Đề Cử</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,500&family=Be+Vietnam+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Be Vietnam Pro',sans-serif;background:#fff8f9;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;z-index:0;background-image:radial-gradient(circle,rgba(220,150,165,.16) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
+.blob{position:fixed;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0}
+.b1{width:350px;height:350px;background:rgba(220,155,168,.16);top:-80px;left:-100px}
+.b2{width:280px;height:280px;background:rgba(235,185,165,.13);top:35%;right:-70px}
+.b3{width:220px;height:220px;background:rgba(210,148,168,.11);bottom:8%;left:15%}
+.petal{position:fixed;top:-40px;pointer-events:none;z-index:10;will-change:transform,opacity;animation:fall linear infinite}
+@keyframes fall{0%{transform:translateY(0) translateX(0)}25%{transform:translateY(25vh) translateX(var(--sw))}50%{transform:translateY(50vh) translateX(0)}75%{transform:translateY(75vh) translateX(calc(var(--sw)*-1))}100%{transform:translateY(110vh) translateX(0);opacity:0}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.page{position:relative;z-index:1;max-width:640px;margin:0 auto;padding:3rem 1.8rem 4rem}
+.header{text-align:center;margin-bottom:2.8rem}
+.deco-top{font-size:11px;letter-spacing:5px;color:rgba(200,130,145,.5);margin-bottom:18px;display:block;font-weight:300}
+.title-main{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#2e1018;line-height:1.2;margin-bottom:4px}
+.title-main span{color:#c0607a}
+.title-sub{font-family:'Playfair Display',serif;font-size:15px;font-style:italic;color:#c8849a;margin-bottom:22px;display:block}
+.desc{font-size:13.5px;font-weight:300;color:#7a4050;line-height:1.8;background:rgba(255,240,244,.7);border:1px solid rgba(220,160,175,.22);border-radius:14px;padding:13px 18px}
+.desc strong{font-weight:500;color:#b05068}
+.divider{display:flex;align-items:center;gap:12px;margin:2rem 0 1.6rem}
+.divider-line{flex:1;height:.5px;background:linear-gradient(90deg,transparent,rgba(200,140,155,.3),transparent)}
+.divider-text{font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:rgba(200,140,155,.6);white-space:nowrap}
+.list{display:flex;flex-direction:column;gap:10px}
+.story-link{display:flex;align-items:center;gap:14px;background:#fff;border:.5px solid rgba(220,165,178,.25);border-radius:14px;padding:13px 16px;text-decoration:none;transition:transform .18s,box-shadow .18s,border-color .18s;box-shadow:0 2px 8px rgba(200,130,145,.06)}
+.story-link:hover{transform:translateX(5px);box-shadow:0 4px 16px rgba(200,110,130,.12);border-color:rgba(200,130,150,.45)}
+.link-num{font-family:'Playfair Display',serif;font-size:18px;font-style:italic;color:rgba(200,140,155,.38);min-width:28px;text-align:center;flex-shrink:0}
+.link-body{flex:1;min-width:0}
+.link-name{font-size:14px;font-weight:500;color:#2e1018;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.link-url{font-size:11px;color:rgba(180,110,130,.4);font-weight:300;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.link-arrow{font-size:13px;color:rgba(200,140,155,.38);flex-shrink:0;transition:color .18s,transform .18s}
+.story-link:hover .link-arrow{color:#c0607a;transform:translateX(3px)}
+.footer{text-align:center;margin-top:3rem;font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:rgba(200,140,155,.55)}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div id="petals"></div>
+<div class="page">
+  <div class="header">
+    <span class="deco-top">&#10022; &nbsp; ✿ &nbsp; &#10022;</span>
+    <h1 class="title-main">Truy&#7879;n Hay<br><span>Công Chúa</span> &#272;&#234; C&#7917;</h1>
+    <span class="title-sub">&#8212; curated with love 🌸 &#8212;</span>
+    <p class="desc">Công chúa có nhận nạp hộ full bộ các truyện ở <strong>TruyenHD</strong> nhaaaa 💕</p>
+  </div>
+  <div class="divider">
+    <span class="divider-line"></span>
+    <span class="divider-text">✿ Danh s&#225;ch truy&#7879;n ✿</span>
+    <span class="divider-line"></span>
+  </div>
+  <div class="list">
+    <a class="story-link" href="https://truyenhd.cc/truyen/truc-ma-o-chung-thuc-ra-la-soi-doi/" target="_blank">
+      <span class="link-num">01</span>
+      <div class="link-body">
+        <div class="link-name">Trúc Mã Ở Chung Cấm Dục Lại Quá Hoang Dã!</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/ca-co-thuyen/" target="_blank">
+      <span class="link-num">02</span>
+      <div class="link-body">
+        <div class="link-name">Ca Có Thuyền</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/tu-cam-hoa-mong/" target="_blank">
+      <span class="link-num">03</span>
+      <div class="link-body">
+        <div class="link-name">Ngẫu Hương</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/tam-nguyen-qua-han/" target="_blank">
+      <span class="link-num">04</span>
+      <div class="link-body">
+        <div class="link-name">Tâm Nguyện Quá Hạn</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+  </div>
+  <div class="footer">Follow Công Chúa để nhận nhiều list truyện hay nha 🌸</div>
+</div>
+<script>
+const P=[{"l": 85.9, "sz": 16.9, "dur": 7.8, "del": 9.6, "sw": 38, "sp": 7.4, "op": 0.79, "c1": "#fff0f3", "c2": "#fcd5df"}, {"l": 38.9, "sz": 19.2, "dur": 8.0, "del": 11.3, "sw": 39, "sp": 10.2, "op": 0.78, "c1": "#fadadd", "c2": "#f5b8c8"}, {"l": 95.6, "sz": 15.1, "dur": 10.2, "del": 3.7, "sw": 32, "sp": 4.5, "op": 0.63, "c1": "#f7b8cb", "c2": "#f090b0"}, {"l": 86.8, "sz": 15.5, "dur": 12.4, "del": 2.1, "sw": 24, "sp": 8.4, "op": 0.89, "c1": "#fff0f3", "c2": "#fcd5df"}, {"l": 98.5, "sz": 19.1, "dur": 10.2, "del": 11.2, "sw": 26, "sp": 5.9, "op": 0.86, "c1": "#fadadd", "c2": "#f5b8c8"}, {"l": 94.6, "sz": 10.7, "dur": 7.9, "del": 10.5, "sw": 24, "sp": 11.5, "op": 0.8, "c1": "#f9c8d8", "c2": "#f0a0bc"}, {"l": 3.7, "sz": 19.1, "dur": 8.4, "del": 8.5, "sw": 47, "sp": 12.0, "op": 0.76, "c1": "#fff0f3", "c2": "#fcd5df"}, {"l": 10.5, "sz": 14.1, "dur": 9.3, "del": 8.6, "sw": 36, "sp": 9.7, "op": 0.56, "c1": "#f7b8cb", "c2": "#f090b0"}, {"l": 3.2, "sz": 23.6, "dur": 13.1, "del": 3.6, "sw": 27, "sp": 7.7, "op": 0.7, "c1": "#f7b8cb", "c2": "#f090b0"}, {"l": 10.7, "sz": 15.1, "dur": 6.9, "del": 9.2, "sw": 58, "sp": 7.1, "op": 0.93, "c1": "#f9c8d8", "c2": "#f0a0bc"}, {"l": 20.8, "sz": 11.9, "dur": 10.9, "del": 11.5, "sw": 59, "sp": 4.8, "op": 0.93, "c1": "#fff0f3", "c2": "#fcd5df"}, {"l": 79.6, "sz": 10.5, "dur": 10.1, "del": 2.4, "sw": 42, "sp": 6.4, "op": 0.78, "c1": "#fff0f3", "c2": "#fcd5df"}, {"l": 79.4, "sz": 10.7, "dur": 12.1, "del": 4.4, "sw": 31, "sp": 5.1, "op": 0.76, "c1": "#fce4ec", "c2": "#f8c0d0"}, {"l": 74.9, "sz": 18.3, "dur": 9.7, "del": 2.0, "sw": 51, "sp": 5.4, "op": 0.58, "c1": "#fff0f3", "c2": "#fcd5df"}, {"l": 38.4, "sz": 10.4, "dur": 6.1, "del": 8.9, "sw": 48, "sp": 9.8, "op": 0.78, "c1": "#f7b8cb", "c2": "#f090b0"}, {"l": 19.7, "sz": 14.8, "dur": 12.4, "del": 9.4, "sw": 28, "sp": 9.5, "op": 0.87, "c1": "#fce4ec", "c2": "#f8c0d0"}, {"l": 95.9, "sz": 14.8, "dur": 8.1, "del": 6.1, "sw": 29, "sp": 9.2, "op": 0.83, "c1": "#f9c8d8", "c2": "#f0a0bc"}, {"l": 32.2, "sz": 23.7, "dur": 8.8, "del": 2.5, "sw": 28, "sp": 8.6, "op": 0.61, "c1": "#f7b8cb", "c2": "#f090b0"}, {"l": 52.8, "sz": 11.8, "dur": 6.6, "del": 0.0, "sw": 36, "sp": 10.9, "op": 0.61, "c1": "#fadadd", "c2": "#f5b8c8"}, {"l": 68.1, "sz": 12.7, "dur": 9.1, "del": 9.2, "sw": 32, "sp": 8.7, "op": 0.57, "c1": "#fadadd", "c2": "#f5b8c8"}, {"l": 16.0, "sz": 18.1, "dur": 12.0, "del": 9.3, "sw": 34, "sp": 5.6, "op": 0.69, "c1": "#fff0f3", "c2": "#fcd5df"}, {"l": 7.3, "sz": 11.2, "dur": 12.1, "del": 3.3, "sw": 51, "sp": 8.0, "op": 0.58, "c1": "#fff0f3", "c2": "#fcd5df"}];
+const w=document.getElementById('petals');
+P.forEach(p=>{const e=document.createElement('div');e.className='petal';e.style.cssText=`left:${p.l}vw;width:${p.sz}px;height:${p.sz}px;--sw:${p.sw}px;animation-duration:${p.dur}s;animation-delay:-${p.del}s;opacity:${p.op}`;e.innerHTML=`<div style="animation:spin ${p.sp}s linear infinite"><svg width="18" height="16" viewBox="0 0 18 16" fill="none"><ellipse cx="9" cy="8" rx="5" ry="8" fill="${p.c1}" transform="rotate(-20 9 8)"/><ellipse cx="9" cy="8" rx="3" ry="6" fill="${p.c2}" opacity=".5" transform="rotate(-20 9 8)"/></svg></div>`;w.appendChild(e);});
+</script>
+</body></html>
