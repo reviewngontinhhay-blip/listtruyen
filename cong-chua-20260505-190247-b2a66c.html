@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Truyện Hay Công Chúa Đề Cử</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,500&family=Be+Vietnam+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Be Vietnam Pro',sans-serif;background:#fff8f9;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;z-index:0;background-image:radial-gradient(circle,rgba(220,150,165,.16) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
+.blob{position:fixed;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0}
+.b1{width:350px;height:350px;background:rgba(220,155,168,.16);top:-80px;left:-100px}
+.b2{width:280px;height:280px;background:rgba(235,185,165,.13);top:35%;right:-70px}
+.b3{width:220px;height:220px;background:rgba(210,148,168,.11);bottom:8%;left:15%}
+.petal{position:fixed;top:-40px;pointer-events:none;z-index:10;will-change:transform,opacity;animation:fall linear infinite}
+@keyframes fall{0%{transform:translateY(0) translateX(0)}25%{transform:translateY(25vh) translateX(var(--sw))}50%{transform:translateY(50vh) translateX(0)}75%{transform:translateY(75vh) translateX(calc(var(--sw)*-1))}100%{transform:translateY(110vh) translateX(0);opacity:0}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.page{position:relative;z-index:1;max-width:640px;margin:0 auto;padding:3rem 1.8rem 4rem}
+.header{text-align:center;margin-bottom:2.8rem}
+.deco-top{font-size:11px;letter-spacing:5px;color:rgba(200,130,145,.5);margin-bottom:18px;display:block;font-weight:300}
+.title-main{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#2e1018;line-height:1.2;margin-bottom:4px}
+.title-main span{color:#c0607a}
+.title-sub{font-family:'Playfair Display',serif;font-size:15px;font-style:italic;color:#c8849a;margin-bottom:22px;display:block}
+.desc{font-size:13.5px;font-weight:300;color:#7a4050;line-height:1.8;background:rgba(255,240,244,.7);border:1px solid rgba(220,160,175,.22);border-radius:14px;padding:13px 18px}
+.desc strong{font-weight:500;color:#b05068}
+.divider{display:flex;align-items:center;gap:12px;margin:2rem 0 1.6rem}
+.divider-line{flex:1;height:.5px;background:linear-gradient(90deg,transparent,rgba(200,140,155,.3),transparent)}
+.divider-text{font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:rgba(200,140,155,.6);white-space:nowrap}
+.list{display:flex;flex-direction:column;gap:10px}
+.story-link{display:flex;align-items:center;gap:14px;background:#fff;border:.5px solid rgba(220,165,178,.25);border-radius:14px;padding:13px 16px;text-decoration:none;transition:transform .18s,box-shadow .18s,border-color .18s;box-shadow:0 2px 8px rgba(200,130,145,.06)}
+.story-link:hover{transform:translateX(5px);box-shadow:0 4px 16px rgba(200,110,130,.12);border-color:rgba(200,130,150,.45)}
+.link-num{font-family:'Playfair Display',serif;font-size:18px;font-style:italic;color:rgba(200,140,155,.38);min-width:28px;text-align:center;flex-shrink:0}
+.link-body{flex:1;min-width:0}
+.link-name{font-size:14px;font-weight:500;color:#2e1018;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.link-url{font-size:11px;color:rgba(180,110,130,.4);font-weight:300;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.link-arrow{font-size:13px;color:rgba(200,140,155,.38);flex-shrink:0;transition:color .18s,transform .18s}
+.story-link:hover .link-arrow{color:#c0607a;transform:translateX(3px)}
+.footer{text-align:center;margin-top:3rem;font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:rgba(200,140,155,.55)}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div id="petals"></div>
+<div class="page">
+  <div class="header">
+    <span class="deco-top">&#10022; &nbsp; ✿ &nbsp; &#10022;</span>
+    <h1 class="title-main">Truy&#7879;n Hay<br><span>Công Chúa</span> &#272;&#234; C&#7917;</h1>
+    <span class="title-sub">&#8212; curated with love 🌸 &#8212;</span>
+    <p class="desc">Công chúa có nhận nạp hộ full bộ các truyện ở <strong>TruyenHD</strong> nhaaaa 💕</p>
+  </div>
+  <div class="divider">
+    <span class="divider-line"></span>
+    <span class="divider-text">✿ Danh s&#225;ch truy&#7879;n ✿</span>
+    <span class="divider-line"></span>
+  </div>
+  <div class="list">
+    <a class="story-link" href="https://truyenhd.cc/truyen/phong-hoa-hoa-cot/" target="_blank">
+      <span class="link-num">01</span>
+      <div class="link-body">
+        <div class="link-name">1. Phong Hoa Hoạ Cốt</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/khoa-canh-buom/" target="_blank">
+      <span class="link-num">02</span>
+      <div class="link-body">
+        <div class="link-name">2. Khoá Thủy Tinh</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/sang-goi-hoang-huynh-dem-den-goi-phu-quan/" target="_blank">
+      <span class="link-num">03</span>
+      <div class="link-body">
+        <div class="link-name">3. Chàng Là Huynh Trưởng Cũng Là Phu Quân Ta</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/ac-quy-van-nhan-me-moi-ngay-deu-du-do-nang/" target="_blank">
+      <span class="link-num">04</span>
+      <div class="link-body">
+        <div class="link-name">4. Ngày Nào Diễm Quỷ Cũng Dụ Dỗ Nàng</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://demonstory.net/truyen-hoan-thanh.html" target="_blank">
+      <span class="link-num">05</span>
+      <div class="link-body">
+        <div class="link-name">5. Đỉnh Cấp Tên Côn Đồ</div>
+        <div class="link-url">demonstory.net</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/vai-ac-su-ton-bi-nam-chinh-quan-lay-300625/" target="_blank">
+      <span class="link-num">06</span>
+      <div class="link-body">
+        <div class="link-name">6. Vai Ác Sư Tôn Bị Nam Chính Quấn Lấy</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/ham-hai-vai-chinh-la-khong-dung-300625/" target="_blank">
+      <span class="link-num">07</span>
+      <div class="link-body">
+        <div class="link-name">7. Hãm Hại Vai Chính Là Không Đúng</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/thanh-pho-quy-di-nhung-ke-yeu-toi-deu-khong-phai-con-nguoi-np/" target="_blank">
+      <span class="link-num">08</span>
+      <div class="link-body">
+        <div class="link-name">8. Thành Phố Quỷ Dị, Những Kẻ Yêu Tôi Không Phải Con Người</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/anh-sang-duy-nhat-cua-ac-ma/" target="_blank">
+      <span class="link-num">09</span>
+      <div class="link-body">
+        <div class="link-name">9. Nguyên Tội</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/benh-kieu-than-si-nhe-nhang-do-danh-bao-boi-ngoan-mem-tron-khong-thoat/" target="_blank">
+      <span class="link-num">10</span>
+      <div class="link-body">
+        <div class="link-name">10. Kiểm Soát Dịu Dàng</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+  </div>
+  <div class="footer">Follow Công Chúa để nhận nhiều list truyện hay nha 🌸</div>
+</div>
+<script>
+const P=[{"l": 4.1, "sz": 23.2, "dur": 13.2, "del": 11.0, "sw": 59, "sp": 11.3, "op": 0.85, "c1": "#fadadd", "c2": "#f5b8c8"}, {"l": 76.5, "sz": 21.7, "dur": 8.4, "del": 2.0, "sw": 43, "sp": 4.2, "op": 0.93, "c1": "#f9c8d8", "c2": "#f0a0bc"}, {"l": 60.6, "sz": 10.1, "dur": 6.4, "del": 3.8, "sw": 35, "sp": 7.1, "op": 0.84, "c1": "#f9c8d8", "c2": "#f0a0bc"}, {"l": 1.3, "sz": 12.6, "dur": 8.7, "del": 4.7, "sw": 22, "sp": 6.8, "op": 0.88, "c1": "#fff0f3", "c2": "#fcd5df"}, {"l": 67.7, "sz": 14.7, "dur": 13.3, "del": 5.5, "sw": 25, "sp": 6.9, "op": 0.64, "c1": "#fadadd", "c2": "#f5b8c8"}, {"l": 69.3, "sz": 18.9, "dur": 7.6, "del": 3.2, "sw": 54, "sp": 10.6, "op": 0.55, "c1": "#fff0f3", "c2": "#fcd5df"}, {"l": 76.7, "sz": 22.4, "dur": 8.0, "del": 4.3, "sw": 26, "sp": 5.9, "op": 0.9, "c1": "#fce4ec", "c2": "#f8c0d0"}, {"l": 68.0, "sz": 10.7, "dur": 13.7, "del": 4.4, "sw": 28, "sp": 10.7, "op": 0.64, "c1": "#fadadd", "c2": "#f5b8c8"}, {"l": 72.2, "sz": 17.0, "dur": 12.1, "del": 0.6, "sw": 46, "sp": 9.4, "op": 0.83, "c1": "#fce4ec", "c2": "#f8c0d0"}, {"l": 39.9, "sz": 19.0, "dur": 12.9, "del": 8.9, "sw": 47, "sp": 10.4, "op": 0.92, "c1": "#f7b8cb", "c2": "#f090b0"}, {"l": 7.7, "sz": 16.2, "dur": 6.0, "del": 0.9, "sw": 53, "sp": 9.9, "op": 0.79, "c1": "#f7b8cb", "c2": "#f090b0"}, {"l": 43.9, "sz": 14.3, "dur": 7.2, "del": 9.6, "sw": 45, "sp": 11.6, "op": 0.92, "c1": "#fce4ec", "c2": "#f8c0d0"}, {"l": 1.7, "sz": 19.9, "dur": 7.3, "del": 9.0, "sw": 58, "sp": 7.0, "op": 0.6, "c1": "#f9c8d8", "c2": "#f0a0bc"}, {"l": 14.7, "sz": 13.7, "dur": 11.6, "del": 4.2, "sw": 58, "sp": 5.9, "op": 0.75, "c1": "#f7b8cb", "c2": "#f090b0"}, {"l": 16.8, "sz": 17.3, "dur": 11.4, "del": 4.4, "sw": 48, "sp": 4.6, "op": 0.64, "c1": "#f9c8d8", "c2": "#f0a0bc"}, {"l": 86.3, "sz": 20.0, "dur": 9.0, "del": 7.7, "sw": 28, "sp": 7.2, "op": 0.77, "c1": "#fff0f3", "c2": "#fcd5df"}, {"l": 45.5, "sz": 19.9, "dur": 8.4, "del": 10.8, "sw": 33, "sp": 5.7, "op": 0.57, "c1": "#f9c8d8", "c2": "#f0a0bc"}, {"l": 73.2, "sz": 13.0, "dur": 6.9, "del": 5.9, "sw": 33, "sp": 8.9, "op": 0.63, "c1": "#fadadd", "c2": "#f5b8c8"}, {"l": 86.7, "sz": 22.2, "dur": 10.3, "del": 5.4, "sw": 57, "sp": 11.2, "op": 0.77, "c1": "#fce4ec", "c2": "#f8c0d0"}, {"l": 73.2, "sz": 17.6, "dur": 7.7, "del": 10.3, "sw": 36, "sp": 10.4, "op": 0.67, "c1": "#fce4ec", "c2": "#f8c0d0"}, {"l": 58.0, "sz": 12.2, "dur": 7.1, "del": 4.5, "sw": 26, "sp": 7.4, "op": 0.87, "c1": "#fadadd", "c2": "#f5b8c8"}, {"l": 83.9, "sz": 23.5, "dur": 10.9, "del": 5.3, "sw": 34, "sp": 6.7, "op": 0.74, "c1": "#f9c8d8", "c2": "#f0a0bc"}];
+const w=document.getElementById('petals');
+P.forEach(p=>{const e=document.createElement('div');e.className='petal';e.style.cssText=`left:${p.l}vw;width:${p.sz}px;height:${p.sz}px;--sw:${p.sw}px;animation-duration:${p.dur}s;animation-delay:-${p.del}s;opacity:${p.op}`;e.innerHTML=`<div style="animation:spin ${p.sp}s linear infinite"><svg width="18" height="16" viewBox="0 0 18 16" fill="none"><ellipse cx="9" cy="8" rx="5" ry="8" fill="${p.c1}" transform="rotate(-20 9 8)"/><ellipse cx="9" cy="8" rx="3" ry="6" fill="${p.c2}" opacity=".5" transform="rotate(-20 9 8)"/></svg></div>`;w.appendChild(e);});
+</script>
+</body></html>
