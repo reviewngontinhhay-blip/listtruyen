@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Truyện Hay Phù Thuỷ Đề Cử</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,500&family=Be+Vietnam+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Be Vietnam Pro',sans-serif;background:#080612;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;z-index:0;background-image:radial-gradient(circle,rgba(140,80,200,.12) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
+.blob{position:fixed;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+.b1{width:380px;height:380px;background:rgba(100,40,160,.18);top:-100px;left:-120px}
+.b2{width:300px;height:300px;background:rgba(60,20,120,.15);bottom:10%;right:-80px}
+.star-p{position:fixed;border-radius:50%;background:#fff;pointer-events:none;z-index:2;animation:tw var(--d) ease-in-out infinite alternate}
+@keyframes tw{0%{opacity:.05;transform:scale(.6)}100%{opacity:.7;transform:scale(1.2)}}
+.sparkle{position:fixed;top:-20px;pointer-events:none;z-index:10;animation:fsp linear infinite;color:#c8a0ff;font-size:var(--sz)px;will-change:transform,opacity}
+@keyframes fsp{0%{transform:translateY(0) translateX(0) rotate(0deg);opacity:0}10%{opacity:1}50%{transform:translateY(50vh) translateX(var(--sw)px) rotate(180deg);opacity:.8}90%{opacity:.4}100%{transform:translateY(110vh) translateX(0) rotate(360deg);opacity:0}}
+.page{position:relative;z-index:1;max-width:640px;margin:0 auto;padding:3rem 1.8rem 4rem}
+.header{text-align:center;margin-bottom:2.8rem}
+.deco-top{font-size:11px;letter-spacing:5px;color:rgba(180,140,240,.45);margin-bottom:18px;display:block;font-weight:300}
+.title-main{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#e8e0f5;line-height:1.2;margin-bottom:4px;text-shadow:0 0 30px rgba(160,100,255,.25)}
+.title-main span{color:#b87fff;text-shadow:0 0 20px rgba(180,120,255,.4)}
+.title-sub{font-family:'Playfair Display',serif;font-size:15px;font-style:italic;color:rgba(180,140,240,.6);margin-bottom:22px;display:block}
+.desc{font-size:13.5px;font-weight:300;color:rgba(200,180,240,.7);line-height:1.8;background:rgba(100,60,160,.15);border:1px solid rgba(160,100,255,.2);border-radius:14px;padding:13px 18px}
+.desc strong{font-weight:500;color:#c8a0ff}
+.divider{display:flex;align-items:center;gap:12px;margin:2rem 0 1.6rem}
+.divider-line{flex:1;height:.5px;background:linear-gradient(90deg,transparent,rgba(160,100,255,.3),transparent)}
+.divider-text{font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:rgba(180,140,240,.5);white-space:nowrap}
+.list{display:flex;flex-direction:column;gap:10px}
+.story-link{display:flex;align-items:center;gap:14px;background:rgba(30,15,55,.7);border:.5px solid rgba(160,100,255,.18);border-radius:14px;padding:13px 16px;text-decoration:none;transition:transform .18s,box-shadow .18s,border-color .18s;box-shadow:0 2px 12px rgba(0,0,0,.3);backdrop-filter:blur(4px)}
+.story-link:hover{transform:translateX(5px);box-shadow:0 4px 20px rgba(140,80,255,.2);border-color:rgba(180,120,255,.4)}
+.link-num{font-family:'Playfair Display',serif;font-size:18px;font-style:italic;color:rgba(180,140,240,.3);min-width:28px;text-align:center;flex-shrink:0}
+.link-body{flex:1;min-width:0}
+.link-name{font-size:14px;font-weight:500;color:rgba(235,220,255,.88);margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.link-url{font-size:11px;color:rgba(160,120,220,.35);font-weight:300;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.link-arrow{font-size:13px;color:rgba(180,140,240,.3);flex-shrink:0;transition:color .18s,transform .18s}
+.story-link:hover .link-arrow{color:#b87fff;transform:translateX(3px)}
+.footer{text-align:center;margin-top:3rem;font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:rgba(180,140,240,.45)}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div>
+<div id="stars"></div><div id="sparkles"></div>
+<div class="page">
+  <div class="header">
+    <span class="deco-top">&#10022; &nbsp; ✧ &nbsp; &#10022;</span>
+    <h1 class="title-main">Truy&#7879;n Hay<br><span>Phù Thuỷ</span> &#272;&#234; C&#7917;</h1>
+    <span class="title-sub">&#8212; curated with magic 🔮 &#8212;</span>
+    <p class="desc">Phù thuỷ có nhận nạp hộ full bộ các truyện ở <strong>TruyenHD</strong> nhaaaa 💕</p>
+  </div>
+  <div class="divider">
+    <span class="divider-line"></span>
+    <span class="divider-text">✧ Danh s&#225;ch truy&#7879;n ✧</span>
+    <span class="divider-line"></span>
+  </div>
+  <div class="list">
+    <a class="story-link" href="https://www.wattpad.com/story/353080231-h-văn-gặp-hổ" target="_blank">
+      <span class="link-num">01</span>
+      <div class="link-body">
+        <div class="link-name">Gặp hổ</div>
+        <div class="link-url">wattpad.com</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/nang-la-cua-ta-khong-duoc-tron/" target="_blank">
+      <span class="link-num">02</span>
+      <div class="link-body">
+        <div class="link-name">Nàng là của ta không được trốn</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://www.wattpad.com/story/400350339-chân-núi-quả-phụ-hhh" target="_blank">
+      <span class="link-num">03</span>
+      <div class="link-body">
+        <div class="link-name">Chân núi quả phụ</div>
+        <div class="link-url">wattpad.com</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://truyenhd.cc/truyen/khoa-ranh-gioi-300625/" target="_blank">
+      <span class="link-num">04</span>
+      <div class="link-body">
+        <div class="link-name">Khoá ranh giới</div>
+        <div class="link-url">truyenhd.cc</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+    <a class="story-link" href="https://joyme.me/@quanthaptulang/nghien-nat-canh-hoa-cao-h-33116" target="_blank">
+      <span class="link-num">05</span>
+      <div class="link-body">
+        <div class="link-name">Nghiền nát cánh hoa</div>
+        <div class="link-url">joyme.me</div>
+      </div>
+      <span class="link-arrow">&#8594;</span>
+    </a>
+  </div>
+  <div class="footer">Follow Phù Thuỷ để nhận nhiều list truyện hay nha 🔮</div>
+</div>
+<script>
+const ST=[{"t": 39.8, "l": 83.3, "s": 2.3, "d": 1.9}, {"t": 10.2, "l": 77.0, "s": 1.2, "d": 2.9}, {"t": 57.4, "l": 20.3, "s": 1.7, "d": 3.8}, {"t": 89.7, "l": 60.0, "s": 1.0, "d": 2.3}, {"t": 12.5, "l": 8.8, "s": 0.7, "d": 2.0}, {"t": 9.7, "l": 11.5, "s": 0.9, "d": 1.6}, {"t": 73.5, "l": 15.4, "s": 1.9, "d": 1.3}, {"t": 79.6, "l": 70.7, "s": 0.6, "d": 2.6}, {"t": 96.2, "l": 9.1, "s": 2.1, "d": 3.3}, {"t": 83.4, "l": 11.4, "s": 0.5, "d": 3.2}, {"t": 77.3, "l": 3.6, "s": 0.9, "d": 4.0}, {"t": 39.5, "l": 91.0, "s": 0.4, "d": 2.9}, {"t": 1.4, "l": 14.5, "s": 1.2, "d": 1.8}, {"t": 88.5, "l": 64.1, "s": 0.5, "d": 2.7}, {"t": 62.7, "l": 75.1, "s": 1.7, "d": 1.7}, {"t": 25.4, "l": 70.4, "s": 2.2, "d": 1.3}, {"t": 31.1, "l": 79.2, "s": 0.7, "d": 1.6}, {"t": 89.8, "l": 94.9, "s": 1.2, "d": 2.6}, {"t": 6.0, "l": 25.8, "s": 2.0, "d": 1.5}, {"t": 63.9, "l": 72.3, "s": 0.6, "d": 2.0}, {"t": 33.4, "l": 47.9, "s": 0.9, "d": 2.1}, {"t": 86.5, "l": 49.0, "s": 1.2, "d": 3.9}, {"t": 66.9, "l": 7.7, "s": 1.6, "d": 1.7}, {"t": 93.2, "l": 41.5, "s": 2.0, "d": 1.3}, {"t": 5.7, "l": 97.5, "s": 2.2, "d": 2.1}, {"t": 22.9, "l": 52.8, "s": 0.9, "d": 1.2}, {"t": 37.9, "l": 2.0, "s": 2.2, "d": 3.7}, {"t": 49.9, "l": 69.4, "s": 2.1, "d": 1.4}, {"t": 72.7, "l": 15.4, "s": 1.6, "d": 3.5}, {"t": 53.1, "l": 40.4, "s": 0.8, "d": 3.3}, {"t": 4.0, "l": 85.1, "s": 0.9, "d": 1.5}, {"t": 47.1, "l": 32.2, "s": 2.2, "d": 2.8}, {"t": 28.0, "l": 69.3, "s": 2.2, "d": 3.5}, {"t": 12.2, "l": 25.5, "s": 1.9, "d": 3.1}, {"t": 57.3, "l": 46.2, "s": 1.1, "d": 3.3}, {"t": 28.3, "l": 69.3, "s": 1.0, "d": 2.9}, {"t": 7.6, "l": 96.0, "s": 0.6, "d": 1.2}, {"t": 74.5, "l": 37.1, "s": 2.1, "d": 1.2}, {"t": 40.5, "l": 83.3, "s": 2.3, "d": 3.0}, {"t": 67.7, "l": 90.4, "s": 1.2, "d": 3.7}, {"t": 75.0, "l": 31.4, "s": 1.2, "d": 2.0}, {"t": 60.4, "l": 76.3, "s": 1.7, "d": 1.1}, {"t": 79.4, "l": 6.9, "s": 0.8, "d": 2.1}, {"t": 38.3, "l": 98.2, "s": 0.6, "d": 2.6}, {"t": 39.6, "l": 67.9, "s": 0.8, "d": 3.3}, {"t": 6.1, "l": 54.8, "s": 1.9, "d": 1.7}, {"t": 82.7, "l": 15.2, "s": 1.3, "d": 3.1}, {"t": 38.1, "l": 95.5, "s": 2.3, "d": 1.5}, {"t": 68.4, "l": 66.1, "s": 0.6, "d": 3.2}, {"t": 52.8, "l": 11.6, "s": 0.5, "d": 3.1}, {"t": 61.9, "l": 65.7, "s": 1.5, "d": 2.5}, {"t": 38.7, "l": 49.4, "s": 2.4, "d": 2.1}, {"t": 53.1, "l": 91.0, "s": 1.6, "d": 1.5}, {"t": 54.9, "l": 48.8, "s": 2.1, "d": 2.4}, {"t": 29.4, "l": 86.2, "s": 1.2, "d": 1.9}, {"t": 60.1, "l": 74.5, "s": 1.0, "d": 2.8}, {"t": 60.6, "l": 79.6, "s": 0.8, "d": 2.6}, {"t": 44.5, "l": 40.4, "s": 1.7, "d": 2.1}, {"t": 29.6, "l": 44.2, "s": 1.6, "d": 3.4}, {"t": 27.2, "l": 95.3, "s": 0.8, "d": 1.8}, {"t": 25.1, "l": 0.2, "s": 1.7, "d": 1.3}, {"t": 7.2, "l": 21.0, "s": 2.0, "d": 2.5}, {"t": 45.8, "l": 89.9, "s": 1.6, "d": 3.8}, {"t": 76.6, "l": 91.5, "s": 1.6, "d": 1.8}, {"t": 68.8, "l": 23.5, "s": 1.1, "d": 1.2}, {"t": 65.5, "l": 82.0, "s": 1.3, "d": 3.5}, {"t": 34.0, "l": 15.8, "s": 1.2, "d": 1.8}, {"t": 78.2, "l": 67.3, "s": 1.3, "d": 3.3}, {"t": 23.4, "l": 25.4, "s": 2.2, "d": 2.3}, {"t": 70.6, "l": 63.3, "s": 1.4, "d": 2.5}];
+const sw=document.getElementById('stars');
+ST.forEach(s=>{const e=document.createElement('div');e.className='star-p';e.style.cssText=`width:${s.s}px;height:${s.s}px;top:${s.t}%;left:${s.l}%;--d:${s.d}s`;sw.appendChild(e);});
+const SP=[{"l": 11.7, "sz": 16.0, "dur": 8.3, "del": 1.5, "sw": 30, "op": 0.75, "g": "\u2735"}, {"l": 42.7, "sz": 12.2, "dur": 10.3, "del": 7.9, "sw": -34, "op": 0.67, "g": "\u2735"}, {"l": 63.9, "sz": 14.5, "dur": 7.6, "del": 7.6, "sw": -27, "op": 0.68, "g": "\u2727"}, {"l": 61.6, "sz": 14.1, "dur": 11.7, "del": 9.5, "sw": 44, "op": 0.5, "g": "\u22c6"}, {"l": 92.9, "sz": 10.9, "dur": 11.5, "del": 3.4, "sw": 28, "op": 0.63, "g": "\u00b7"}, {"l": 83.6, "sz": 9.3, "dur": 7.9, "del": 4.8, "sw": -58, "op": 0.53, "g": "\u2727"}, {"l": 21.8, "sz": 9.8, "dur": 7.8, "del": 4.6, "sw": -32, "op": 0.83, "g": "\u2735"}, {"l": 93.4, "sz": 11.2, "dur": 8.6, "del": 9.2, "sw": -56, "op": 0.86, "g": "\u00b7"}, {"l": 2.6, "sz": 17.9, "dur": 9.5, "del": 9.0, "sw": 52, "op": 0.54, "g": "\u2735"}, {"l": 64.0, "sz": 17.7, "dur": 8.6, "del": 6.1, "sw": 55, "op": 0.56, "g": "\u22c6"}, {"l": 47.0, "sz": 8.7, "dur": 10.5, "del": 2.8, "sw": 27, "op": 0.84, "g": "\u00b7"}, {"l": 99.4, "sz": 13.5, "dur": 6.9, "del": 3.1, "sw": 27, "op": 0.86, "g": "\u2735"}, {"l": 83.9, "sz": 11.9, "dur": 11.1, "del": 7.8, "sw": -59, "op": 0.89, "g": "\u2735"}, {"l": 36.8, "sz": 11.9, "dur": 11.5, "del": 7.9, "sw": 44, "op": 0.61, "g": "\u2726"}, {"l": 89.5, "sz": 8.7, "dur": 10.0, "del": 1.2, "sw": -49, "op": 0.72, "g": "\u2726"}, {"l": 69.9, "sz": 8.1, "dur": 6.4, "del": 6.2, "sw": -53, "op": 0.68, "g": "\u273a"}, {"l": 43.3, "sz": 17.6, "dur": 9.9, "del": 0.8, "sw": -31, "op": 0.6, "g": "\u273a"}, {"l": 63.6, "sz": 12.1, "dur": 8.2, "del": 3.8, "sw": 45, "op": 0.84, "g": "\u22c6"}];
+const sp=document.getElementById('sparkles');
+SP.forEach(p=>{const e=document.createElement('div');e.className='sparkle';e.style.cssText=`left:${p.l}vw;--sz:${p.sz};--sw:${p.sw}px;animation-duration:${p.dur}s;animation-delay:-${p.del}s;opacity:${p.op}`;e.textContent=p.g;sp.appendChild(e);});
+</script>
+</body></html>
